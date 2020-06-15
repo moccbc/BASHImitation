@@ -9,6 +9,6 @@ My partner and I split the work between each other. I would do the expression pa
 
 I realized that I did not understand how any system calls that we used worked. Due to my curious nature, I could not leave this feeling alone. In addition, due to the outbreak of COVID19, we were not able to finish implementing piping and file I/O redirection. 
 
-So what better way to learn these concepts than to actually do the project myself? The motiviation behing this project is to learn more about the Linux system calls and to finish what we started. I hope to extend the project a little further to include other BASH terminal commands.
+So what better way to learn these concepts than to actually do the project myself? The motiviation behind this project is to learn more about the Linux system calls and to finish what we started. I hope to extend the project a little further to include other BASH terminal commands.
 
 
