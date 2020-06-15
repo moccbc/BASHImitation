@@ -9,7 +9,7 @@ ADD_EXECUTABLE(rshell
 )
 
 ADD_EXECUTABLE(test
-    unit_tests/unit_test.cpp
+    unit_tests/parsing_ut.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
