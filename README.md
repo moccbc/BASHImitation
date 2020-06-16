@@ -20,24 +20,27 @@ One thing I learned while doing this project during class is the importance of a
 
 I used some ideas from the agile method. Since this is also a relatively small project done by a single person, I also use test driven design in some parts.
 
-### 1. Comment
+### 1. Branch
+Even though I am working by myself on this project, I branch from the master whenever I want to add a feature to the project. This helps me keep the master branch always working.
+
+### 2. Comment
 I do this before starting to code. This is so that I can solidify my idea of what I want the code to do before coding it. If I don't, I end up adding more features to the function. This makes it hard to maintain and test. As a result, it makes my code brittle and unscalable. 
     
 The commenting done in this project is very thorough. While some may say that this is unnecessary, I've found that this is useful when looking back at my code months (maybe years) from now. The intent behind this is so that I can explain it to others what each function does in words when asked about it.
 
-### 2. Code
+### 3. Code
 I only code after I'm done commenting what the function does. Again this is done in order to minimize the amount of on the fly coding that I do. 
 
 Coding is sometimed done in conjunction with step 3. This is called test driven design. Personally I find that this helps me find bugs and fix them more quickly. 
 
-### 3. Test
+### 4. Test
 Testing is done through the google test suite. Again this is sometimes done in conjunction with step 2, as per the philosphy for TDD.
 
 I know I have a lot of tests. Thats because that's kind of what TDD makes me do. I also love writing tests and then writing code to pass them. 
 
 When doing this project in class my grader would usually comment that "X amount of tests is mybe too much lol". But I figure, better be safe now than find a big bug later.
 
-### 4. Git workflow
+### 5. Git workflow
 This is the usual git add -> git commit -m "blah blah" -> git push -> create pull request -> check code -> merge.
 
 Proper version control is very handy, especially because I make a lot of mistakes.
@@ -49,18 +52,21 @@ Given an expression, the program will take these steps to execute the input.
 Some input may have erros or mistakes. This will check for those in advance.
 eg) echo hi && || echo bye
 
-### 2. Clean
+### 2. Remove octothrope and extra spaces 
 Some input may have # and extra spaces. This will remove impurites in the input. This is so that the parsing step is easily done.
 eg) ls myFolder          &&      echo folder #folder
 
-### 3. Parse
-This step will parse the expression. I will split the expression by the spaces and return a array of strings.
+### 3. Add space
+In this step, the program will add spaces if necessary in front of () and connectors. This is needed because step 3 splits the expression along spaces.
 
-### 4. Tokenize
-This step will assign each substring in the array a token in order to identify the strings.
+### 4. Split 
+This step will split the expression by the spaces and return a array of strings. This makes the tokenizing part much easier to handle.
 
-### 5. Shunting Yard Algorithm
+### 5. Tokenize
+This step will assign each substring in the array a token in order to identify the strings. This allows the shunting yard to correctly place precedence by accessing each token's type value.
+
+### 6. Shunting Yard Algorithm
 This step will utilize the shunting yard algorithm in order to set precedence of sub-expressions to execute.
 
-### 6. Execute
+### 7. Execute
 Lastly we will execute the expression.
