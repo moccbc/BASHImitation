@@ -22,6 +22,7 @@ class Cleaner {
 
         /*---------- Class Functions ----------*/
         std::string remove_whitespace();
+        std::string remove_octothrope();
 
     private:
         std::string expression;

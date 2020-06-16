@@ -8,9 +8,9 @@ ADD_EXECUTABLE(rshell
     src/main.cpp
 )
 
-ADD_EXECUTABLE(test
-    unit_tests/parsing_ut.cpp
+ADD_EXECUTABLE(cleaner_test
+    unit_tests/cleaner_ut.cpp
 )
 
-TARGET_LINK_LIBRARIES(test gtest)
-TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreaads=ON)
+TARGET_LINK_LIBRARIES(cleaner_test gtest)
+TARGET_COMPILE_DEFINITIONS(cleaner_test PRIVATE gtest_disable_pthreaads=ON)
