@@ -38,6 +38,6 @@ class Splitter {
     private:
         std::string expression;
 
-}
+};
 
-#ifndef // __SPLITTER_HPP__
+#endif // __SPLITTER_HPP__
