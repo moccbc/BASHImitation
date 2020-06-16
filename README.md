@@ -1,15 +1,28 @@
 # BASH Imitaion Project
 ## Introduction
-This is a project with the intent of learning more about the BASH. It is a spinoff personal project from "rshell", a BASH cloning project in CS100 (Introduction to Software Construction) done at UC Riverside.  
+This is a project with the intent of learning more about the BASH. It is a project to redo and extend "rshell", a class project done in CS100 (Introduction to Software Construction) at UC Riverside.  
 
-## Motivation
 When undertaking this project in CS100, we are required to partner up into groups of 2. The intent behind this is to experience creating software in teams. My partner was amazing, and I had a lot of fun working in a team with him.
 
-My partner and I split the work between each other. I would do the expression parsing, while he handled the system calls. In the spirit of teamwork, this was a great idea. We probably got work done faster than if I did it myself. On the other hand, this did come with its own drawbacks.
+My partner and I split the work between each other. I did the expression parsing, while he handled the system calls. In the spirit of teamwork, this is a great idea. We got work done faster than if I did it myself. On the other hand, this did come with its own drawbacks.
 
-I realized that I did not understand how any system calls that we used worked. Due to my curious nature, I could not leave this feeling alone. In addition, due to the outbreak of COVID19, we were not able to finish implementing piping and file I/O redirection. 
+Before doing this project, I didn't understand how any of the system calls that we use work. Due to my curious nature, I really wanted to learn more about it. In addition, due to the outbreak of COVID19, we were not able to finish implementing piping and file I/O redirection. 
 
-So what better way to learn these concepts than to actually do the project myself? The motiviation behind this project is to learn more about the Linux system calls and to finish what we started. I hope to extend the project a little further to include other BASH terminal commands.
+So what better way to learn these concepts than to actually do the project myself? 
+
+## Motivation and Goals
+The motiviation behind this project is to learn more about the Linux system calls. I also intend to finish implementing piping and file I/O redirection. Iintend to extend the capability of the shell to include other BASH terminal commands.
+
+## Workflow
+One thing I learned while doing this project during class is the importance of an established workflow. Below is the workflow that I took in order to minimize errors and create this program at an efficient speed.
+
+### 1. Comment
+I do this before starting to code. This is so that I can solidify my idea of what I want the code to do before coding it. If I don't, I end up adding more features to the function. This makes it hard to maintain and test. As a result, it makes my code brittle and unscalable. 
+    
+The commenting done in this project is very thorough. While some may say that this is unnecessary, I've found that this is useful when looking back at my code months (maybe years) from now. The intent behind this is so that I can explain it to others what each function does in words when asked about it.
+
+### 2. Code
+Of cour
 
 ## Under the hood
 Given an expression, the program will take these steps to execute the input.
