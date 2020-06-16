@@ -41,3 +41,9 @@ std::string Cleaner::remove_octothrope() {
 
     return to_clean;
 }
+
+std::string Cleaner::clean() {
+    expression = remove_whitespace();
+    expression = remove_octothrope();
+    return expression;
+}
