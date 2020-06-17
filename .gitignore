@@ -30,7 +30,7 @@
 *.exe
 *.out
 *.app
-rshell
+shell
 test
 
 # CMake Temp Files

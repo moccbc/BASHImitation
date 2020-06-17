@@ -25,13 +25,14 @@ class Token {
         Token() {}
 
         /*---------- Pure Virtual Fuctions ----------*/
-        virtual std::string get_type();
-        virtual int execute();
+        // Returns the type of the token.
+        virtual std::string get_type() = 0;
 
-    protected:
-        std::string type;
-        int status;
-        int exit_status;
+        // Executes the token.
+        virtual int execute() = 0;
+
+        // Shows what the actual expression is.
+        virtual std::string show() = 0;
 
 };
 
