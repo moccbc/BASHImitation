@@ -19,13 +19,15 @@ int Executable::execute() {
         argc[expression.size()] = nullptr;
 
         if (strcmp(argc[0], "exit") == 0 || strcmp(argc[0], "Exit") == 0) {
+            // exit status 2 is when exit is called
             exit(2);
         }
 
         if (execvp(argc[0], argc) == -1) {
-            perror("ERROR");
+            std::cout << "ERROR: Expression not executable" << std::endl;
         }
 
+        // exit status 3 is an error
         exit(3);
     }
     else {

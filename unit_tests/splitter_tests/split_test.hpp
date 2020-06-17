@@ -48,3 +48,16 @@ TEST(SplitterTest, SplitOverLoad)
     EXPECT_EQ("ls", output[16]);
 }
 
+TEST(SplitterTest, SplitQuotes)
+{
+    std::string expression = "echo \"    hello\" && echo world ";
+    Splitter* s = new Splitter(expression);
+    std::vector<std::string> output = s->split();
+
+    EXPECT_EQ("echo", output[0]);
+    EXPECT_EQ("    hello", output[1]);
+    EXPECT_EQ("&&", output[2]);
+    EXPECT_EQ("echo", output[3]);
+    EXPECT_EQ("world", output[4]);
+}
+

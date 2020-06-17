@@ -3,7 +3,9 @@
 #include <unistd.h>
 #include "parsing_src/cleaner.cpp"
 #include "parsing_src/splitter.cpp"
+#include "../header/tokens/token.hpp"
 #include "token_src/executable.cpp"
+#include "token_src/and.cpp"
 
 using namespace std;
 
@@ -25,7 +27,7 @@ int main() {
             vector_expression = splitter->split();
 
             // Temporary expression handling
-            Executable* Exec = new Executable(vector_expression);
+            Token* Exec = new Executable(vector_expression);
 
             // Exit command returns 2
             if (Exec->execute() == 2) {
