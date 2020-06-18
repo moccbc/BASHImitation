@@ -1,19 +1,19 @@
-#ifndef __OR_HPP__
-#define __OR_HPP__
+#ifndef __SEMI_HPP__
+#define __SEMI_HPP__
 
 #include "token.hpp"
 
-class Or : public Token {
+class Semi : public Token {
     public:
         /*---------- Constructors ----------*/
-        Or() { 
-            type = "Or"; 
+        Semi() { 
+            type = "SEMI"; 
             left_child = nullptr;
             right_child = nullptr;
         }
 
-        Or(Token* left, Token* right) {
-            type = "OR";
+        Semi(Token* left, Token* right) {
+            type = "SEMI";
             left_child = left;
             right_child = right;
         }
@@ -22,7 +22,7 @@ class Or : public Token {
         std::string get_type() { return type; }
 
         std::string show() {
-            return left_child->show() + " || " + right_child->show();
+            return left_child->show() + " ; " + right_child->show();
         }
 
         void set_left(Token* left) {

@@ -25,6 +25,14 @@ class And : public Token {
             return left_child->show() + " && " + right_child->show();
         }
 
+        void set_left(Token* left) {
+            left_child = left;
+        }
+
+        void set_right(Token* right) {
+            right_child = right;
+        }
+
         int execute();
 
 
