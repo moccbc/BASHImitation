@@ -26,11 +26,9 @@ Coming soon!
     - CMake
 
 ### Procedure
-'''
-$ git clone https://github.com/moccbc/BASHImitation.git
-$ make
-$ ./shell # This last line is to run the program.
-'''
+    $ git clone https://github.com/moccbc/BASHImitation.git
+    $ make
+    $ ./shell # This last line is to run the program.
 
 ## Limitations
 Coming soon!
